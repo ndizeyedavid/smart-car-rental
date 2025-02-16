@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply text-indigo-600 bg-indigo-100;
+}
+
+/* nprogress */
+#nprogress .bar {
+  background: #16a9e4 !important;
+  height: 5px !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1031;
+  box-shadow: 0 0 10px #16a9e4, 0 0 5px #16a9e4;
+}
+
+/* Spinner */
+#spin {
+  animation: spinning 1s linear infinite;
+}
+
+@keyframes spinning {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
